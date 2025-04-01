@@ -1,0 +1,190 @@
+/* Γενικά Στυλ */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Ανοιχτό γκρι φόντο */
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #0056b3; /* Κύριο Μπλε */
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003d82; /* Πιο σκούρο μπλε στο hover */
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #0056b3; /* Μπλε φόντο */
+    color: #ffffff; /* Άσπρο κείμενο */
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+header .subtitle {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #e0e0e0; /* Ελαφρώς πιο σκούρο άσπρο */
+}
+
+/* Main Content Area */
+main {
+    max-width: 960px; /* Μέγιστο πλάτος περιεχομένου */
+    margin: 2rem auto; /* Κεντράρισμα */
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #ffffff; /* Άσπρο φόντο για τις ενότητες */
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navigation Gateways */
+.navigation-gateways h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.gateway-container {
+    display: flex;
+    flex-wrap: wrap; /* Για να σπάει σε μικρές οθόνες */
+    gap: 1.5rem; /* Κενό μεταξύ των πυλών */
+    justify-content: center;
+}
+
+.gateway {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    flex-basis: 45%; /* Προσπάθεια να είναι δύο στήλες */
+    min-width: 280px; /* Ελάχιστο πλάτος για μικρές οθόνες */
+    background-color: #e7f1ff; /* Πολύ απαλό μπλε φόντο */
+}
+
+.gateway h3 a {
+    color: #0056b3;
+    text-decoration: none;
+}
+.gateway h3 a:hover {
+    text-decoration: underline;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #003d82;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Highlights Section */
+.highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights li {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.highlights li:last-child {
+    border-bottom: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a0d4ff; /* Ανοιχτό μπλε για links στο footer */
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .gateway-container {
+        flex-direction: column; /* Οι πύλες η μία κάτω από την άλλη */
+        align-items: center;
+    }
+    .gateway {
+       flex-basis: 90%; /* Πιάνει σχεδόν όλο το πλάτος */
+    }
+}
+
+@media (max-width: 480px) {
+     header h1 {
+        font-size: 1.8rem;
+    }
+     main {
+        margin: 1rem auto;
+    }
+    section {
+        padding: 1rem;
+    }
+}
+
+/* Στυλ για την εναλλαγή κειμένου (θα χρησιμοποιηθεί αργότερα) */
+.technical-content {
+    display: none; /* Κρυφό αρχικά */
+    border-left: 3px solid #0056b3;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: #f8f8f8;
+    font-size: 0.95em;
+}
+.toggle-button {
+     margin-top: 10px;
+     padding: 5px 10px;
+     cursor: pointer;
+     background-color: #e0e0e0;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+}
